@@ -24,8 +24,8 @@ generator flutter controller --name <name> --feature <feature>
 package cmd
 
 import (
-	"gitlab.com/playup/generator/internal/generator/flutter"
-	"gitlab.com/playup/generator/pkg/entity"
+	"github.com/lbernardo/generator/internal/generator/flutter"
+	"github.com/lbernardo/generator/pkg/entity"
 )
 
 var FlutterCmd = &entity.Module{

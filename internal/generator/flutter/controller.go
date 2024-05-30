@@ -2,9 +2,9 @@ package flutter
 
 import (
 	"fmt"
-	"gitlab.com/playup/generator/internal/templates/flutter"
-	"gitlab.com/playup/generator/pkg/strings"
-	"gitlab.com/playup/generator/pkg/template_gen"
+	"github.com/lbernardo/generator/internal/templates/flutter"
+	"github.com/lbernardo/generator/pkg/strings"
+	"github.com/lbernardo/generator/pkg/template_gen"
 	"os"
 	"path"
 )

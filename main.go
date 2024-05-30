@@ -22,7 +22,7 @@ THE SOFTWARE.
 package main
 
 import (
-	"gitlab.com/playup/generator/cmd"
+	"github.com/lbernardo/generator/cmd"
 )
 
 func main() {

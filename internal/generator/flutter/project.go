@@ -2,7 +2,7 @@ package flutter
 
 import (
 	"fmt"
-	"gitlab.com/playup/generator/pkg/execute"
+	"github.com/lbernardo/generator/pkg/execute"
 	"os"
 	"path"
 )

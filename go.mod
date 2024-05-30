@@ -1,4 +1,4 @@
-module gitlab.com/playup/generator
+module github.com/lbernardo/generator
 
 go 1.21.6
 

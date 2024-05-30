@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"gitlab.com/playup/generator/pkg/entity"
+	"github.com/lbernardo/generator/pkg/entity"
 	"os"
 
 	"github.com/spf13/cobra"
