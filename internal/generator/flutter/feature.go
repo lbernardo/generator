@@ -24,4 +24,15 @@ func NewFeature(params map[string]string, rootPath string) {
 		fmt.Println(err.Error())
 		os.Exit(1)
 	}
+	fmt.Println("Created new module")
+
+	var paramsToPageAndController = map[string]string{
+		"name":    name,
+		"feature": name,
+	}
+	if child != "" {
+		paramsToPageAndController["feature"] = path.Join(child, "features", name)
+	}
+
+	NewPage(paramsToPageAndController, rootPath)
 }
