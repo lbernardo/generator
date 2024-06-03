@@ -18,7 +18,7 @@ func NewProject(params map[string]string, rootPath string) {
 		fmt.Println("error create flutter project:", err)
 		os.Exit(1)
 	}
-	cm = execute.Execute("flutter", "pub", "add", "flutter_modular", "mobx", "flutter_mobx", "mobx_codegen", "icons_plus", "google_fonts")
+	cm = execute.Execute("flutter", "pub", "add", "flutter_modular", "mobx", "flutter_mobx", "mobx_codegen", "icons_plus", "google_fonts", "dev:build_runner")
 	cm.Dir = path.Join(rootPath, name)
 	if err := cm.Run(); err != nil {
 		fmt.Println("error get depedencies:", err)
@@ -38,6 +38,7 @@ func NewProject(params map[string]string, rootPath string) {
 		"lib/main.dart":           flutter.Main,
 		"lib/app/app_module.dart": flutter.AppModule,
 		"lib/app/app_widget.dart": flutter.AppWidget,
+		"Makefile":                flutter.Makefile,
 	}
 
 	os.Remove(path.Join(name, "lib/main.dart"))

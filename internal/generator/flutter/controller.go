@@ -3,6 +3,7 @@ package flutter
 import (
 	"fmt"
 	"github.com/lbernardo/generator/internal/templates/flutter"
+	"github.com/lbernardo/generator/pkg/execute"
 	"github.com/lbernardo/generator/pkg/os_gen"
 	"github.com/lbernardo/generator/pkg/strings"
 	"github.com/lbernardo/generator/pkg/template_gen"
@@ -22,6 +23,11 @@ func NewController(params map[string]string, rootPath string) {
 	}); err != nil {
 		fmt.Println(err.Error())
 		os.Exit(1)
+	}
+	cm := execute.Execute("flutter", "pub", "run", "build_runner", "build")
+	cm.Dir = rootPath
+	if err := cm.Run(); err != nil {
+		fmt.Println("warn: error to run build_runner")
 	}
 	fmt.Println("create controller", fileController)
 }

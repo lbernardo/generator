@@ -21,3 +21,6 @@ var AppWidget string
 
 //go:embed main.tpl
 var Main string
+
+//go:embed makefile.tpl
+var Makefile string
