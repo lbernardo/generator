@@ -49,9 +49,8 @@ var FlutterCmd = &entity.Module{
 					Required:    true,
 				},
 				{
-					Name:        "feature",
-					Description: "feature name",
-					Required:    true,
+					Name:        "path",
+					Description: "path from lib/app",
 				},
 			},
 			Run: flutter.NewPage,
@@ -65,9 +64,8 @@ var FlutterCmd = &entity.Module{
 					Required:    true,
 				},
 				{
-					Name:        "feature",
-					Description: "feature name",
-					Required:    true,
+					Name:        "path",
+					Description: "path from lib/app",
 				},
 			},
 			Run: flutter.NewController,

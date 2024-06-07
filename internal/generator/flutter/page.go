@@ -12,8 +12,8 @@ import (
 
 func NewPage(params map[string]string, rootPath string) {
 	var name = params["name"]
-	var feature = params["feature"]
-	var featurePath = path.Join(rootPath, "lib", "app", "features", feature, "pages")
+	var pathFromLibApp = params["path"]
+	var featurePath = path.Join(rootPath, "lib", "app", pathFromLibApp, "pages")
 	os_gen.Mkdir(featurePath)
 	var filePage = path.Join(featurePath, fmt.Sprintf("%v_page.dart", name))
 

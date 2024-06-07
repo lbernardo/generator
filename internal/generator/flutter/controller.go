@@ -13,8 +13,8 @@ import (
 
 func NewController(params map[string]string, rootPath string) {
 	var name = params["name"]
-	var feature = params["feature"]
-	var featurePath = path.Join(rootPath, "lib", "app", "features", feature, "stores")
+	var pathFromLibApp = params["path"]
+	var featurePath = path.Join(rootPath, "lib", "app", pathFromLibApp, "controllers")
 	os_gen.Mkdir(featurePath)
 	var fileController = path.Join(featurePath, fmt.Sprintf("%v_controller.dart", name))
 	if err := template_gen.WriteByTemplate(flutter.Controller, fileController, map[string]string{
