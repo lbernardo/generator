@@ -1,4 +1,4 @@
-package example
+package {{.name}}
 
 import (
 	"{{.pkg}}/internal/app/{{.name}}/http"
