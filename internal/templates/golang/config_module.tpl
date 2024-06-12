@@ -20,9 +20,9 @@ func RegisterAppConfigs() *viper.Viper {
 
 	for _, file := range configsFiles {
 		_, err := os.Stat(file)
-		if err == os.ErrNotExist {
-			continue
-		}
+		if errors.Is(err, os.ErrNotExist) {
+            continue
+        }
 		filename = file
 	}
 	if filename == "" {
