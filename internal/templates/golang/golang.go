@@ -36,3 +36,9 @@ var AppService string
 
 //go:embed appname_module.tpl
 var AppNameModule string
+
+//go:embed repository.tpl
+var Repository string
+
+//go:embed entity.tpl
+var Entity string

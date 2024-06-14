@@ -40,6 +40,8 @@ func NewApp(params map[string]string, rootPath string) {
 		"http/route.go":                   golang.AppHttpRoute,
 		"http/http_module.go":             golang.AppHttpModule,
 		"service/service.go":              golang.AppService,
+		"repository/repository.go":        golang.Repository,
+		fmt.Sprintf("entity/%v.go", name): golang.Entity,
 	}
 
 	for file, content := range files {
