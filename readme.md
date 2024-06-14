@@ -1,5 +1,7 @@
 # Generator
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/lbernardo/generator.svg)](https://pkg.go.dev/github.com/lbernardo/generator)
+
 ## Flutter
 
 ### Generate a new feature
