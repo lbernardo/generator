@@ -42,3 +42,9 @@ var Repository string
 
 //go:embed entity.tpl
 var Entity string
+
+//go:embed database_connection.tpl
+var DatabaseConnection string
+
+//go:embed database_module.tpl
+var DatabaseModule string

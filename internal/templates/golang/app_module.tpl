@@ -14,6 +14,7 @@ var (
 		logger.Module,
 		configs.Module,
 		http.Module,
+		database.Module,
 		// Application
 	)
 )
