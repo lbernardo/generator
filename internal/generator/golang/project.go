@@ -54,6 +54,8 @@ func NewProject(params map[string]string, rootPath string) {
 		"internal/http/server.go":           golang.HttpServer,
 		"internal/logger/module.go":         golang.LoggerModuler,
 		"internal/configs/config_module.go": golang.ConfigModule,
+		"internal/database/connection.go":   golang.DatabaseConnection,
+		"internal/database/module.go":       golang.DatabaseModule,
 	}
 
 	for file, content := range files {
